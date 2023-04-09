@@ -6,10 +6,10 @@ library(scales)
 library(ggplot2)
 
 # Step 1:Loading required datasets
-adspend <- read_csv("C:/Users/rajashekar/Documents/data/adspend.csv")
-installs <- read_csv("C:/Users/rajashekar/Documents/data/installs.csv")
-payouts <- read_csv("C:/Users/rajashekar/Documents/data/payouts.csv")
-revenue <- read_csv("C:/Users/rajashekar/Documents/data/revenue.csv")
+adspend <- read_csv("raw_data/adspend.csv")
+installs <- read_csv("raw_data/installs.csv")
+payouts <- read_csv("raw_data/payouts.csv")
+revenue <- read_csv("raw_data/revenue.csv")
 
 # Step 2: Cleaning the datasets(Removing duplicates)
 clean_adspend <- adspend %>% distinct()  # Remove duplicate rows in adspend
